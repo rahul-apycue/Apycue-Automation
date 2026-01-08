@@ -24,4 +24,15 @@ public class LoginTests extends BaseTest {
         // Add your assertion here based on successful login
         // Example: Assert.assertEquals(driver.getTitle(), "Dashboard");
     }
+    @Test(priority = 3)
+    public void verifyLoginWithInValidPassword() {
+        LoginPage loginPage = new LoginPage(driver);
+        String email = ConfigReader.getProperty("email");
+        String password = "Test@123";
+        
+        String msg = loginPage.getErrorMessage(email, password);
+        
+        // Add your assertion here based on successful login
+        // Example: Assert.assertEquals(driver.getTitle(), "Dashboard");
+    }
 }

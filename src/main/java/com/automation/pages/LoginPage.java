@@ -40,8 +40,11 @@ public class LoginPage extends BasePage {
         clickSignButton();
     }
     
-    public String getErrorMessage() {
-        return getText(errorMessage);
+    public String getErrorMessage(String email, String password) {
+    	enterEmail(email);
+        enterPassword(password);
+        clickSignButton();
+    	return getText(errorMessage);
     }
     
     public boolean isLoginButtonDisplayed() {
