@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
 import com.automation.utils.ConfigReader;
 import com.automation.utils.DriverManager;
 import com.automation.utils.ExtentReportManager;
@@ -32,10 +34,15 @@ public class BaseTest {
     	extent.flush();
     }
     
+    @BeforeSuite
+	public void resetScreenshotCounter() {
+		ScreenshotUtil.resetCounter();
+	}
+    
     @BeforeMethod
     public void setUp() {
         Log.info("Setting up the test environment");
-    	ScreenshotUtil.resetCounter(); // Reset counter for each test
+    	//ScreenshotUtil.resetCounter(); // Reset counter for each test
         
     	Log.info("Browser is opening");
         String browser = ConfigReader.getProperty("browser");

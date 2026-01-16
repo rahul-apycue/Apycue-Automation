@@ -9,6 +9,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverManager {
     
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+	private DriverManager() {
+		// Private constructor to prevent instantiation
+	}
     
     public static WebDriver getDriver() {
         return driver.get();
@@ -38,8 +42,8 @@ public class DriverManager {
                 break;
                 
             default:
-                System.out.println("Invalid browser name. Launching Chrome...");
-                WebDriverManager.chromedriver().setup();
+                Log.info("Invalid browser name provided: " + browserName + ". Defaulting to Chrome.");
+            	WebDriverManager.chromedriver().setup();
                 driverInstance = new ChromeDriver();
         }
         

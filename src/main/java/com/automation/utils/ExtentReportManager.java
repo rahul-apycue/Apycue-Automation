@@ -10,8 +10,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentReportManager {
 	
     private static ExtentReports extent;
-    private static ExtentTest test;
 
+	private ExtentReportManager() {
+		// Private constructor to prevent instantiation
+	}
+    
     public static ExtentReports getReportInstance() {
      
     	if (extent == null) {
@@ -31,7 +34,6 @@ public class ExtentReportManager {
     }
     
 	public static ExtentTest createTest(String testName) {
-		test = getReportInstance().createTest(testName);
-		return test;
+		return getReportInstance().createTest(testName);
 	}
 }

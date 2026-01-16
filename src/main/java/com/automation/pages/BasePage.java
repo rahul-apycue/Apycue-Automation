@@ -7,11 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.automation.utils.ScreenshotUtil;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 public class BasePage {
     
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected static ExtentReports extent;
+    protected static ExtentTest test;
     
     public BasePage(WebDriver driver) {
         this.driver = driver;
