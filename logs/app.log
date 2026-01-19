@@ -43,3 +43,176 @@
 2026-01-19 11:55:39 [main] INFO  com.automation.utils.Log - Test Passed: verifyPasswordMasking
 2026-01-19 11:55:39 [main] INFO  com.automation.utils.Log - Browser is closing
 2026-01-19 11:55:39 [main] INFO  com.automation.utils.Log - Screenshot saved: 002_TestCompleted_20260119_115539.png
+2026-01-19 17:40:14 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:40:14 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:40:16 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:40:17 [main] INFO  com.automation.utils.Log - Screenshot saved: 001_InitialPageLoad_20260119_174016.png
+2026-01-19 17:40:17 [main] INFO  com.automation.utils.Log - ===== Test Case 1 Started : Verify Login Page Is Displayed =====
+2026-01-19 17:40:17 [main] INFO  com.automation.utils.Log - Verifying presence of Login button on Login page
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Screenshot saved: 002_ElementCheck_20260119_174017.png
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Login page verification completed successfully
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - ===== Test Case 1 Ended =====
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Test Passed: verifyLoginPageIsDisplayed
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Screenshot saved: 003_TestCompleted_20260119_174018.png
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:40:18 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:40:19 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:40:19 [main] INFO  com.automation.utils.Log - Screenshot saved: 004_InitialPageLoad_20260119_174019.png
+2026-01-19 17:40:19 [main] INFO  com.automation.utils.Log - ===== Test Case 2 Started : Verify Login With Valid Credentials =====
+2026-01-19 17:40:19 [main] INFO  com.automation.utils.Log - Reading email and password from config file
+2026-01-19 17:40:19 [main] INFO  com.automation.utils.Log - Calling login method of LoginPage
+2026-01-19 17:40:20 [main] INFO  com.automation.utils.Log - Screenshot saved: 005_BeforeEnteringText_20260119_174019.png
+2026-01-19 17:40:20 [main] INFO  com.automation.utils.Log - Screenshot saved: 006_AfterEnteringText_jaydeep@apycue.com_20260119_174020.png
+2026-01-19 17:40:20 [main] INFO  com.automation.utils.Log - Screenshot saved: 007_BeforeEnteringText_20260119_174020.png
+2026-01-19 17:40:20 [main] INFO  com.automation.utils.Log - Screenshot saved: 008_AfterEnteringText_Apycue@Staging2024!_20260119_174020.png
+2026-01-19 17:40:20 [main] INFO  com.automation.utils.Log - Screenshot saved: 009_BeforeClick_20260119_174020.png
+2026-01-19 17:40:21 [main] INFO  com.automation.utils.Log - Screenshot saved: 010_AfterClick_20260119_174020.png
+2026-01-19 17:40:50 [main] ERROR com.automation.utils.Log - Test Failed: verifyLoginWithValidCredentials
+2026-01-19 17:42:48 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:42:48 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:42:49 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:42:50 [main] INFO  com.automation.utils.Log - Screenshot saved: 001_InitialPageLoad_20260119_174249.png
+2026-01-19 17:42:50 [main] INFO  com.automation.utils.Log - ===== Test Case 1 Started : Verify Login Page Is Displayed =====
+2026-01-19 17:42:50 [main] INFO  com.automation.utils.Log - Verifying presence of Login button on Login page
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Screenshot saved: 002_ElementCheck_20260119_174250.png
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Login page verification completed successfully
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - ===== Test Case 1 Ended =====
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Test Passed: verifyLoginPageIsDisplayed
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Screenshot saved: 003_TestCompleted_20260119_174251.png
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:42:51 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:42:52 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:42:52 [main] INFO  com.automation.utils.Log - Screenshot saved: 004_InitialPageLoad_20260119_174252.png
+2026-01-19 17:42:52 [main] INFO  com.automation.utils.Log - ===== Test Case 2 Started : Verify Login With Valid Credentials =====
+2026-01-19 17:42:52 [main] INFO  com.automation.utils.Log - Reading email and password from config file
+2026-01-19 17:42:52 [main] INFO  com.automation.utils.Log - Calling login method of LoginPage
+2026-01-19 17:42:53 [main] INFO  com.automation.utils.Log - Screenshot saved: 005_BeforeEnteringText_20260119_174252.png
+2026-01-19 17:42:53 [main] INFO  com.automation.utils.Log - Screenshot saved: 006_AfterEnteringText_jaydeep@apycue.com_20260119_174253.png
+2026-01-19 17:42:53 [main] INFO  com.automation.utils.Log - Screenshot saved: 007_BeforeEnteringText_20260119_174253.png
+2026-01-19 17:42:53 [main] INFO  com.automation.utils.Log - Screenshot saved: 008_AfterEnteringText_Apycue@Staging2024!_20260119_174253.png
+2026-01-19 17:42:53 [main] INFO  com.automation.utils.Log - Screenshot saved: 009_BeforeClick_20260119_174253.png
+2026-01-19 17:42:54 [main] INFO  com.automation.utils.Log - Screenshot saved: 010_AfterClick_20260119_174253.png
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - LoginPage - getCurrentUrl: https://apycue-staging.web.app/backoffice/login-choice
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Comparing expected URL with actual URL
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Login with valid credentials verified successfully
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - ===== Test Case 2 Ended =====
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Test Passed: verifyLoginWithValidCredentials
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Screenshot saved: 011_TestCompleted_20260119_174255.png
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:42:55 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:42:56 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:42:57 [main] INFO  com.automation.utils.Log - Screenshot saved: 012_InitialPageLoad_20260119_174257.png
+2026-01-19 17:42:57 [main] INFO  com.automation.utils.Log - ===== Test Case 3 Started : Verify Login with incorrect password=====
+2026-01-19 17:42:57 [main] INFO  com.automation.utils.Log - Calling getErrorMessage method of LoginPage
+2026-01-19 17:42:57 [main] INFO  com.automation.utils.Log - Screenshot saved: 013_BeforeEnteringText_20260119_174257.png
+2026-01-19 17:42:57 [main] INFO  com.automation.utils.Log - Screenshot saved: 014_AfterEnteringText_jaydeep@apycue.com_20260119_174257.png
+2026-01-19 17:42:57 [main] INFO  com.automation.utils.Log - Screenshot saved: 015_BeforeEnteringText_20260119_174257.png
+2026-01-19 17:42:58 [main] INFO  com.automation.utils.Log - Screenshot saved: 016_AfterEnteringText_test@123456_20260119_174258.png
+2026-01-19 17:42:58 [main] INFO  com.automation.utils.Log - Screenshot saved: 017_BeforeClick_20260119_174258.png
+2026-01-19 17:42:58 [main] INFO  com.automation.utils.Log - Screenshot saved: 018_AfterClick_20260119_174258.png
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - LoginPage - poptxt.getText(): Invalid credentials
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - Comparing expected and actual validation message
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - The Login with incorrect password scenario verified successfully
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - ===== Test Case 3 Ended =====
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - Test Passed: verifyLoginWithIncorrectPassword
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - Screenshot saved: 019_TestCompleted_20260119_174300.png
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:43:00 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:43:01 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:43:01 [main] INFO  com.automation.utils.Log - Screenshot saved: 020_InitialPageLoad_20260119_174301.png
+2026-01-19 17:43:01 [main] INFO  com.automation.utils.Log - ===== Test Case 4 Started : Verify Login with unregistered email=====
+2026-01-19 17:43:01 [main] INFO  com.automation.utils.Log - Calling getErrorMessage method of LoginPage
+2026-01-19 17:43:02 [main] INFO  com.automation.utils.Log - Screenshot saved: 021_BeforeEnteringText_20260119_174302.png
+2026-01-19 17:43:02 [main] INFO  com.automation.utils.Log - Screenshot saved: 022_AfterEnteringText_jaydeep11@apycue.com_20260119_174302.png
+2026-01-19 17:43:02 [main] INFO  com.automation.utils.Log - Screenshot saved: 023_BeforeEnteringText_20260119_174302.png
+2026-01-19 17:43:02 [main] INFO  com.automation.utils.Log - Screenshot saved: 024_AfterEnteringText_Apycue@Staging2024!_20260119_174302.png
+2026-01-19 17:43:02 [main] INFO  com.automation.utils.Log - Screenshot saved: 025_BeforeClick_20260119_174302.png
+2026-01-19 17:43:03 [main] INFO  com.automation.utils.Log - Screenshot saved: 026_AfterClick_20260119_174302.png
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - LoginPage - poptxt.getText(): Invalid credentials
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - Comparing expected and actual validation message
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - The Login with unregistered email scenario verified successfully
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - ===== Test Case 4 Ended =====
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - Test Passed: verifyLoginWithUnregisteredEmail
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - Screenshot saved: 027_TestCompleted_20260119_174304.png
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:43:04 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:43:05 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Screenshot saved: 028_InitialPageLoad_20260119_174305.png
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - ===== Verify Password Masking Test Started =====
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Checking password field type before input
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Password masking verified before input
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Checking password field type after input
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Password masking verified after input
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - ===== Verify Password Masking Test Completed =====
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Test Passed: verifyPasswordMasking
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Screenshot saved: 029_TestCompleted_20260119_174306.png
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:43:06 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:43:07 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:43:07 [main] INFO  com.automation.utils.Log - Screenshot saved: 030_InitialPageLoad_20260119_174307.png
+2026-01-19 17:43:07 [main] INFO  com.automation.utils.Log - ===== Test Case 5 Started : Verify Case sensitivity in password=====
+2026-01-19 17:43:07 [main] INFO  com.automation.utils.Log - Calling getErrorMessage method of LoginPage
+2026-01-19 17:43:08 [main] INFO  com.automation.utils.Log - Screenshot saved: 031_BeforeEnteringText_20260119_174307.png
+2026-01-19 17:43:08 [main] INFO  com.automation.utils.Log - Screenshot saved: 032_AfterEnteringText_jaydeep@apycue.com_20260119_174308.png
+2026-01-19 17:43:08 [main] INFO  com.automation.utils.Log - Screenshot saved: 033_BeforeEnteringText_20260119_174308.png
+2026-01-19 17:43:08 [main] INFO  com.automation.utils.Log - Screenshot saved: 034_AfterEnteringText_APYCUE@STAGING2024!_20260119_174308.png
+2026-01-19 17:43:08 [main] INFO  com.automation.utils.Log - Screenshot saved: 035_BeforeClick_20260119_174308.png
+2026-01-19 17:43:09 [main] INFO  com.automation.utils.Log - Screenshot saved: 036_AfterClick_20260119_174308.png
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - LoginPage - poptxt.getText(): Invalid credentials
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - Comparing expected and actual validation message
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - The Case sensitivity in password scenario verified successfully
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - ===== Test Case 5 Ended =====
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - Test Passed: verifyCaseSensitivityPassword
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - Screenshot saved: 037_TestCompleted_20260119_174310.png
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:43:10 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:43:11 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Screenshot saved: 038_InitialPageLoad_20260119_174311.png
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - ===== Test Case 6 Started : Verify Blank Submission Attempt=====
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Calling getErrorMessage method of LoginPage
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Screenshot saved: 039_BeforeClick_20260119_174312.png
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Screenshot saved: 040_AfterClick_20260119_174312.png
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Screenshot saved: 041_ElementCheck_20260119_174312.png
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Screenshot saved: 042_ElementCheck_20260119_174312.png
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Comparing expected and actual validation message
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - The Blank submission attempt scenario verified successfully
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - ===== Test Case 6 Ended =====
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Test Passed: verifyBlankSubmission
+2026-01-19 17:43:12 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:13 [main] INFO  com.automation.utils.Log - Screenshot saved: 043_TestCompleted_20260119_174312.png
+2026-01-19 17:43:13 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:43:13 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:43:13 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:43:14 [main] INFO  com.automation.utils.Log - Screenshot saved: 044_InitialPageLoad_20260119_174314.png
+2026-01-19 17:43:14 [main] INFO  com.automation.utils.Log - ===== Verify Invalid Email Format Validation Test Started =====
+2026-01-19 17:43:14 [main] INFO  com.automation.utils.Log - Entering invalid email format and valid password
+2026-01-19 17:43:14 [main] INFO  com.automation.utils.Log - Screenshot saved: 045_BeforeEnteringText_20260119_174314.png
+2026-01-19 17:43:14 [main] INFO  com.automation.utils.Log - Screenshot saved: 046_AfterEnteringText_jaydeep@apycue_20260119_174314.png
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Screenshot saved: 047_BeforeEnteringText_20260119_174314.png
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Screenshot saved: 048_AfterEnteringText_Apycue@Staging2024!_20260119_174315.png
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Screenshot saved: 049_BeforeClick_20260119_174315.png
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Screenshot saved: 050_AfterClick_20260119_174315.png
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Expected Message: Invalid email address | Actual Message: Invalid email address
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - ===== Verify Invalid Email Format Validation Test Completed =====
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Test Passed: verifyInvalidEmailFormatValidation
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:15 [main] INFO  com.automation.utils.Log - Screenshot saved: 051_TestCompleted_20260119_174315.png
+2026-01-19 17:43:16 [main] INFO  com.automation.utils.Log - Setting up the test environment
+2026-01-19 17:43:16 [main] INFO  com.automation.utils.Log - Browser is opening
+2026-01-19 17:43:17 [main] INFO  com.automation.utils.Log - Url is launching
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Screenshot saved: 052_InitialPageLoad_20260119_174317.png
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - ===== Verify Password Visibility Toggle Test Started =====
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Checking password field default masking
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Clicking eye icon
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Clicking eye icon again
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - ===== Verify Password Visibility Toggle Test Completed =====
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Test Passed: verifyPasswordVisibilityToggle
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Browser is closing
+2026-01-19 17:43:18 [main] INFO  com.automation.utils.Log - Screenshot saved: 053_TestCompleted_20260119_174318.png

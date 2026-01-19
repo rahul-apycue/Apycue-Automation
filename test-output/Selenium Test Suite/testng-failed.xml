@@ -6,15 +6,19 @@
     <classes>
       <class name="com.automation.tests.LoginTests">
         <methods>
-          <include name="tearDown"/>
           <include name="resetScreenshotCounter"/>
+          <include name="verifyPasswordVisibilityToggle"/>
+          <include name="tearDown"/>
           <include name="setupReport"/>
           <include name="verifyCaseSensitivityPassword"/>
           <include name="verifyLoginWithUnregisteredEmail"/>
           <include name="setUp"/>
           <include name="tearDownReport"/>
           <include name="verifyLoginWithValidCredentials"/>
+          <include name="verifyInvalidEmailFormatValidation"/>
+          <include name="verifyPasswordMasking"/>
           <include name="verifyLoginWithIncorrectPassword"/>
+          <include name="verifyBlankSubmission"/>
         </methods>
       </class> <!-- com.automation.tests.LoginTests -->
     </classes>

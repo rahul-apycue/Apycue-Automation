@@ -71,7 +71,7 @@ public class LoginPage extends BasePage {
 		enterPassword(password);
 		clickSignButton();
 		// wait.until(ExpectedConditions.visibilityOf(logOutBtn));
-		wait.until(ExpectedConditions.visibilityOfAllElements(logOutBtn, mailFavicon, passwordFavicon));
+		wait.until(ExpectedConditions.visibilityOfAllElements(logOutBtn));
 		Log.info("LoginPage - getCurrentUrl: " + driver.getCurrentUrl());
 		return driver.getCurrentUrl();
 	}
