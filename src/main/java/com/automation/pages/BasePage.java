@@ -7,35 +7,52 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.automation.utils.ScreenshotUtil;
+import com.automation.utils.WaitUtils;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 public class BasePage {
     
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected static ExtentReports extent;
+    protected static ExtentTest test;
+    private WaitUtils waitUtils;
     
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.waitUtils = new WaitUtils(driver);
         PageFactory.initElements(driver, this);
     }
     
     public void click(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
+        waitUtils.waitForPageLoad();
+		waitUtils.waitForUiStability(1);
         ScreenshotUtil.captureScreenshot(driver, "BeforeClick");
         element.click();
+        waitUtils.waitForPageLoad();
+		waitUtils.waitForUiStability(1);
         ScreenshotUtil.captureScreenshot(driver, "AfterClick");
     }
     
     public void sendKeys(WebElement element, String text) {
         wait.until(ExpectedConditions.visibilityOf(element));
+        waitUtils.waitForPageLoad();
+		waitUtils.waitForUiStability(1);
         ScreenshotUtil.captureScreenshot(driver, "BeforeEnteringText");
         element.clear();
         element.sendKeys(text);
+        waitUtils.waitForPageLoad();
+		waitUtils.waitForUiStability(1);
         ScreenshotUtil.captureScreenshot(driver, "AfterEnteringText_" + text);
     }
     
     public String getText(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
+        waitUtils.waitForPageLoad();
+		waitUtils.waitForUiStability(1);
         ScreenshotUtil.captureScreenshot(driver, "GetText");
         return element.getText();
     }
@@ -43,6 +60,8 @@ public class BasePage {
     public boolean isDisplayed(WebElement element) {
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
+            waitUtils.waitForPageLoad();
+    		waitUtils.waitForUiStability(1);
             ScreenshotUtil.captureScreenshot(driver, "ElementCheck");
             return element.isDisplayed();
         } catch (Exception e) {

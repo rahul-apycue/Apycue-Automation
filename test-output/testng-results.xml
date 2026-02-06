@@ -1,94 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-15T17:38:53 IST" name="Default suite" finished-at="2026-01-15T17:39:05 IST" duration-ms="12078">
+  <suite started-at="2026-02-06T11:40:41 IST" name="Default suite" finished-at="2026-02-06T11:41:06 IST" duration-ms="25257">
     <groups>
     </groups>
-    <test started-at="2026-01-15T17:38:53 IST" name="Default test" finished-at="2026-01-15T17:39:05 IST" duration-ms="12078">
-      <class name="com.automation.tests.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:53 IST" name="setUp" finished-at="2026-01-15T17:38:56 IST" duration-ms="2727" status="PASS">
+    <test started-at="2026-02-06T11:40:41 IST" name="Default test" finished-at="2026-02-06T11:41:06 IST" duration-ms="25257">
+      <class name="com.automation.tests.DashboardTests">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.tests.DashboardTests@576f63f6]" started-at="2026-02-06T11:40:41 IST" name="beforeSuite" finished-at="2026-02-06T11:40:41 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:56 IST" name="setupReport" finished-at="2026-01-15T17:38:56 IST" duration-ms="107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method signature="verifyLoginPageIsDisplayed()[pri:1, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:56 IST" name="verifyLoginPageIsDisplayed" finished-at="2026-01-15T17:38:56 IST" duration-ms="204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageIsDisplayed -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:56 IST" name="tearDown" finished-at="2026-01-15T17:38:56 IST" duration-ms="265" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.automation.tests.DashboardTests@576f63f6]" started-at="2026-02-06T11:40:41 IST" name="beforeMethod" finished-at="2026-02-06T11:40:44 IST" duration-ms="2902" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginPageIsDisplayed status=SUCCESS method=LoginTests.verifyLoginPageIsDisplayed()[pri:1, instance:com.automation.tests.LoginTests@6f1de4c7] output={null}]]]>
+                <![CDATA[public void com.automation.tests.DashboardTests.TC_DB_005_verifyConcurrentTabLogout()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:56 IST" name="tearDownReport" finished-at="2026-01-15T17:38:57 IST" duration-ms="164" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_DB_005_verifyConcurrentTabLogout()[pri:5, instance:com.automation.tests.DashboardTests@576f63f6]" started-at="2026-02-06T11:40:44 IST" name="TC_DB_005_verifyConcurrentTabLogout" finished-at="2026-02-06T11:41:06 IST" duration-ms="22213" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:57 IST" name="setUp" finished-at="2026-01-15T17:38:58 IST" duration-ms="1361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:58 IST" name="setupReport" finished-at="2026-01-15T17:38:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:2, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:38:58 IST" name="verifyLoginWithValidCredentials" finished-at="2026-01-15T17:39:01 IST" duration-ms="2670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:01 IST" name="tearDown" finished-at="2026-01-15T17:39:01 IST" duration-ms="184" status="PASS">
+        </test-method> <!-- TC_DB_005_verifyConcurrentTabLogout -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.automation.tests.DashboardTests@576f63f6]" started-at="2026-02-06T11:41:06 IST" name="afterMethod" finished-at="2026-02-06T11:41:06 IST" duration-ms="126" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginTests.verifyLoginWithValidCredentials()[pri:2, instance:com.automation.tests.LoginTests@6f1de4c7] output={null}]]]>
+                <![CDATA[[TestResult name=TC_DB_005_verifyConcurrentTabLogout status=SUCCESS method=DashboardTests.TC_DB_005_verifyConcurrentTabLogout()[pri:5, instance:com.automation.tests.DashboardTests@576f63f6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:01 IST" name="tearDownReport" finished-at="2026-01-15T17:39:01 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.automation.tests.DashboardTests@576f63f6]" started-at="2026-02-06T11:41:06 IST" name="afterSuite" finished-at="2026-02-06T11:41:06 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:01 IST" name="setUp" finished-at="2026-01-15T17:39:02 IST" duration-ms="1315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithInValidPassword()[pri:3, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:02 IST" name="verifyLoginWithInValidPassword" finished-at="2026-01-15T17:39:05 IST" duration-ms="2749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidPassword -->
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:02 IST" name="setupReport" finished-at="2026-01-15T17:39:02 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:05 IST" name="tearDown" finished-at="2026-01-15T17:39:05 IST" duration-ms="279" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInValidPassword status=SUCCESS method=LoginTests.verifyLoginWithInValidPassword()[pri:3, instance:com.automation.tests.LoginTests@6f1de4c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.automation.tests.LoginTests@6f1de4c7]" started-at="2026-01-15T17:39:05 IST" name="tearDownReport" finished-at="2026-01-15T17:39:05 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- com.automation.tests.LoginTests -->
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.automation.tests.DashboardTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

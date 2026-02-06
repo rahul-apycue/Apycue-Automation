@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Functional Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 15, 2026 05:36:39 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 6, 2026 11:01:42 am</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginPageIsDisplayed</p>
+            <p class="name">TC_DB_004_verifyUnauthorizedPageAccess</p>
             <p class="text-sm">
-              <span>5:36:39 pm</span> / <span>00:00:00:208</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:01:42 am</span> / <span>00:00:22:190</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyLoginPageIsDisplayed</h5>
-<span class='badge badge-success'>01.15.2026 5:36:39 pm</span>
-<span class='badge badge-danger'>01.15.2026 5:36:39 pm</span>
-<span class='badge badge-default'>00:00:00:208</span>
+<h5 class="test-status text-fail">TC_DB_004_verifyUnauthorizedPageAccess</h5>
+<span class='badge badge-success'>02.06.2026 11:01:42 am</span>
+<span class='badge badge-danger'>02.06.2026 11:02:04 am</span>
+<span class='badge badge-default'>00:00:22:190</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,16 +106,34 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:39 pm</td>
+        <td>11:01:45 am</td>
         <td>
-          verifying the login page is displayed
+          Step 1: Login as user without Manage Reseller privilege
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:39 pm</td>
+        <td>11:01:59 am</td>
         <td>
-          Verification is completed
+          Step 2: Click on 'Back Office Login' button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:02:03 am</td>
+        <td>
+          Step 3: Copy 'Manage Reseller' tab URL
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:02:04 am</td>
+        <td>
+          Test Failed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='D:\1Rahuls\Apycue\Apycue-Automation\Git Clone Project\Apycue-Automation-13-Jan/screenshots/010_TC_DB_004_verifyUnauthorizedPageAccess_20260206_110204.png' src="D:\1Rahuls\Apycue\Apycue-Automation\Git Clone Project\Apycue-Automation-13-Jan/screenshots/010_TC_DB_004_verifyUnauthorizedPageAccess_20260206_110204.png">
+    
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -127,9 +146,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginPageIsDisplayed</p>
+            <p class="name">TC_DB_004_verifyUnauthorizedPageAccess</p>
             <p class="text-sm">
-              <span>5:36:41 pm</span> / <span>00:00:02:582</span>
+              <span>11:01:42 am</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -137,114 +156,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyLoginPageIsDisplayed</h5>
-<span class='badge badge-success'>01.15.2026 5:36:41 pm</span>
-<span class='badge badge-danger'>01.15.2026 5:36:43 pm</span>
-<span class='badge badge-default'>00:00:02:582</span>
+<h5 class="test-status text-pass">TC_DB_004_verifyUnauthorizedPageAccess</h5>
+<span class='badge badge-success'>02.06.2026 11:01:42 am</span>
+<span class='badge badge-danger'>02.06.2026 11:01:42 am</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:41 pm</td>
-        <td>
-          Test-2 is started
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:41 pm</td>
-        <td>
-          Adding the credentials from config file
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:41 pm</td>
-        <td>
-          Calling Login method of LoginPage class
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:43 pm</td>
-        <td>
-          Verifying the expected URL after login
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:43 pm</td>
-        <td>
-          Verification is completed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyLoginWithInValidPassword</p>
-            <p class="text-sm">
-              <span>5:36:45 pm</span> / <span>00:00:02:656</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyLoginWithInValidPassword</h5>
-<span class='badge badge-success'>01.15.2026 5:36:45 pm</span>
-<span class='badge badge-danger'>01.15.2026 5:36:48 pm</span>
-<span class='badge badge-default'>00:00:02:656</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:45 pm</td>
-        <td>
-          Calling getErrorMessage method of LoginPage class
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:48 pm</td>
-        <td>
-          Verifying the expected error message after login
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:36:48 pm</td>
-        <td>
-          Verification is completed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
+</div>          </div>
         </li>
       </ul>
     </div>
@@ -260,25 +182,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 15, 2026 05:36:39 pm</h3>
+<h3>Feb 6, 2026 11:01:42 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 15, 2026 05:36:48 pm</h3>
+<h3>Feb 6, 2026 11:02:04 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -294,12 +216,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> tests passed
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='50%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -319,8 +241,8 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>10</b> others
+<small data-tooltip='25%'><b>1</b> events failed,
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -336,7 +258,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyLoginPageIsDisplayed":0.208,"verifyLoginPageIsDisplayed":2.582,"verifyLoginWithInValidPassword":2.656
+"TC_DB_004_verifyUnauthorizedPageAccess":22.19,"TC_DB_004_verifyUnauthorizedPageAccess":0
 };
 </script>
 <div class="row">
@@ -345,8 +267,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -363,10 +285,10 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 0,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 10
+infoEvents: 3
 };
 </script>        </div>
       </div>

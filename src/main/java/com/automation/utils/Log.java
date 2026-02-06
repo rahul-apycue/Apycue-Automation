@@ -8,6 +8,9 @@ public class Log {
 
 	private static final Logger logger = LogManager.getLogger(Log.class);
 		
+	private Log() {
+		// Private constructor to prevent instantiation
+	}
 	public static void info(String message) {
 		logger.info(message);
 	}
