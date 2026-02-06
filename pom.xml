@@ -17,10 +17,13 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd"> -->
 	</properties>
 	<dependencies>
 		<!-- Selenium Java -->
+
+		<!-- Source:
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.15.0</version>
+			<version>4.40.0</version>
 		</dependency>
 
 		<!-- TestNG -->
@@ -78,7 +81,7 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd"> -->
 			<version>2.25.3</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<!-- Source:
 		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
 		<dependency>
@@ -87,6 +90,23 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd"> -->
 			<version>2.24.3</version>
 			<scope>compile</scope>
 		</dependency>
+
+		<!-- SLF4J to Log4j2 binding -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.23.1</version>
+		</dependency>
+
+		<!-- Source:
+		https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>6.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>

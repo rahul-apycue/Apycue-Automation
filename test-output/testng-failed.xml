@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Selenium Test Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Login Tests(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.tests.LoginTests">
+      <class name="com.automation.tests.DashboardTests">
         <methods>
-          <include name="resetScreenshotCounter"/>
-          <include name="verifyPasswordVisibilityToggle"/>
-          <include name="tearDown"/>
-          <include name="setupReport"/>
-          <include name="verifyCaseSensitivityPassword"/>
-          <include name="verifyLoginWithUnregisteredEmail"/>
-          <include name="setUp"/>
-          <include name="tearDownReport"/>
-          <include name="verifyLoginWithValidCredentials"/>
-          <include name="verifyInvalidEmailFormatValidation"/>
-          <include name="verifyPasswordMasking"/>
-          <include name="verifyLoginWithIncorrectPassword"/>
-          <include name="verifyBlankSubmission"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="TC_DB_004_verifyUnauthorizedPageAccess"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.automation.tests.LoginTests -->
+      </class> <!-- com.automation.tests.DashboardTests -->
     </classes>
-  </test> <!-- Login Tests(failed) -->
-</suite> <!-- Failed suite [Selenium Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

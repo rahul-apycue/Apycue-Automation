@@ -8,32 +8,46 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportManager {
-	
-    private static ExtentReports extent;
+
+	private static ExtentReports extent;
+	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
 	private ExtentReportManager() {
 		// Private constructor to prevent instantiation
 	}
-    
-    public static ExtentReports getReportInstance() {
-     
-    	if (extent == null) {
-        	
-    		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            String reportPath = "report/ExtentReports_"+timestamp+".html";
-            ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
-            
-            reporter.config().setDocumentTitle("Automation Test Report");
-            reporter.config().setReportName("Functional Test Report");
-            reporter.config().setTheme(Theme.STANDARD);
 
-            extent = new ExtentReports();
-            extent.attachReporter(reporter);
-        }
-        return extent;
-    }
-    
+	public static ExtentReports getReportInstance() {
+
+		if (extent == null) {
+
+			String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+			String reportPath = "report/ExtentReports_" + timestamp + ".html";
+			ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
+
+			reporter.config().setDocumentTitle("Automation Test Report");
+			reporter.config().setReportName("Functional Test Report");
+			reporter.config().setTheme(Theme.STANDARD);
+
+			extent = new ExtentReports();
+			extent.attachReporter(reporter);
+		}
+		return extent;
+	}
+
 	public static ExtentTest createTest(String testName) {
+		ExtentTest extentTest = extent.createTest(testName);
+		test.set(extentTest);
 		return getReportInstance().createTest(testName);
+	}
+
+	public static ExtentTest getTest() {
+		return test.get();
+	}
+	
+	public static void flushReports() {
+	    if (extent != null) {
+	        extent.flush();
+	    }
+	    test.remove(); // Prevents memory leaks
 	}
 }

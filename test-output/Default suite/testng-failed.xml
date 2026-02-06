@@ -3,19 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.tests.LoginTests">
+      <class name="com.automation.tests.DashboardTests">
         <methods>
-          <include name="resetScreenshotCounter"/>
-          <include name="tearDown"/>
-          <include name="setupReport"/>
-          <include name="verifyCaseSensitivityPassword"/>
-          <include name="verifyLoginWithUnregisteredEmail"/>
-          <include name="setUp"/>
-          <include name="tearDownReport"/>
-          <include name="verifyLoginWithValidCredentials"/>
-          <include name="verifyLoginWithIncorrectPassword"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="TC_DB_004_verifyUnauthorizedPageAccess"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.automation.tests.LoginTests -->
+      </class> <!-- com.automation.tests.DashboardTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

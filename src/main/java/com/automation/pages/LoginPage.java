@@ -8,9 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.automation.utils.ConfigReader;
 import com.automation.utils.Log;
 
 public class LoginPage extends BasePage {
+
+	private static final String LOGIN_CHOICE_URL = ConfigReader.getProperty("expected_Url");
 
 	@FindBy(id = "email")
 	private WebElement emailField;
@@ -18,7 +21,7 @@ public class LoginPage extends BasePage {
 	@FindBy(id = "password")
 	private WebElement passwordField;
 
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[@type='submit' and contains(.,'Sign In')]")
 	private WebElement signinButton;
 
 	@FindBy(xpath = "//div[@class='text-xs leading-4 mt-1.5 text-destructive']")
@@ -44,9 +47,12 @@ public class LoginPage extends BasePage {
 
 	@FindBy(xpath = "//p[contains(.,'Invalid email address')]")
 	private WebElement emailValidationErrorMsg;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'visibility')]")
 	private WebElement eyeIcon;
+
+	@FindBy(xpath = "//h1[contains(text(),'Welcome back,')]")
+	private WebElement welcomeMsg;
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -66,14 +72,25 @@ public class LoginPage extends BasePage {
 		click(signinButton);
 	}
 
-	public String login(String email, String password) {
+	public String verifyPageUrl() {
+
+		Log.info("LoginPage - getCurrentUrl: " + driver.getCurrentUrl());
+		return driver.getCurrentUrl();
+	}
+
+	public void login(String email, String password) {
 		enterEmail(email);
 		enterPassword(password);
 		clickSignButton();
-		// wait.until(ExpectedConditions.visibilityOf(logOutBtn));
 		wait.until(ExpectedConditions.visibilityOfAllElements(logOutBtn));
-		Log.info("LoginPage - getCurrentUrl: " + driver.getCurrentUrl());
-		return driver.getCurrentUrl();
+		wait.until(ExpectedConditions.elementToBeClickable(logOutBtn));
+
+	}
+
+	// Logout (generic – adjust locator if needed)
+	public void logout() {
+		driver.manage().deleteAllCookies();
+		driver.navigate().refresh();
 	}
 
 	public String getErrorMessage(String email, String password) {
@@ -109,12 +126,19 @@ public class LoginPage extends BasePage {
 	}
 
 	public boolean isPasswordMasked() {
-		return passwordField.getAttribute("type").equalsIgnoreCase("password");
+
+		return "password".equalsIgnoreCase(passwordField.getAttribute("type"));
+	}
+
+	public boolean isEyeIconDisplayed(){
+		String eyeStatus = eyeIcon.getText();
+		return "visibility".equalsIgnoreCase(eyeStatus);
 	}
 
 	// Check if password is visible
 	public boolean isPasswordVisible() {
-		return passwordField.getAttribute("type").equalsIgnoreCase("text");
+		String typeAttribute = passwordField.getAttribute("type");
+		return "password".equalsIgnoreCase(typeAttribute);
 	}
 
 	// Click on eye icon
@@ -125,7 +149,8 @@ public class LoginPage extends BasePage {
 	public boolean isPasswordMaskedAfterInput(String password) {
 		passwordField.clear();
 		passwordField.sendKeys(password);
-		return passwordField.getAttribute("type").equalsIgnoreCase("password");
+		String typeAttribute = passwordField.getAttribute("type");
+		return "password".equalsIgnoreCase(typeAttribute);
 	}
 
 	public String verifyInvalidEmailFormat(String invalidEmail, String password) {
@@ -136,6 +161,41 @@ public class LoginPage extends BasePage {
 
 		wait.until(ExpectedConditions.visibilityOf(emailValidationErrorMsg));
 		return emailValidationErrorMsg.getText().trim();
+	}
+
+	public void openLoginChoicePage() {
+		driver.get(LOGIN_CHOICE_URL);
+	}
+
+	// Verify redirection to Login page
+	public boolean isRedirectedToLoginPage() {
+		String currentUrl = driver.getCurrentUrl();
+		// Check for null before calling .contains() to prevent NPE
+		if (currentUrl == null) {
+			Log.warn("Current URL is null; cannot verify redirection.");
+			return false;
+		}
+		return currentUrl.contains("/login");
+	}
+
+	public void navigateBack() {
+		driver.navigate().back();
+	}
+
+	public void sqlLoginAttempt(String email, String password) {
+		enterEmail(email);
+		enterPassword(password);
+		clickSignButton();
+	}
+
+	public String getLoginErrorMessage() {
+		return emailField.getAttribute("validationMessage");
+	}
+
+	public boolean isLoginSuccessful() {
+		String currentUrl = driver.getCurrentUrl();
+		// Return false if URL is null, otherwise check if it excludes "/login"
+		return currentUrl != null && !currentUrl.contains("/login");
 	}
 
 }

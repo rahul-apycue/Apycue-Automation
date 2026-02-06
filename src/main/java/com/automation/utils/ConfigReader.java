@@ -7,7 +7,11 @@ import java.util.Properties;
 public class ConfigReader {
     
     private static Properties properties;
-    
+
+	private ConfigReader() {
+		// Private constructor to prevent instantiation
+	}
+	
     static {
         try {
             FileInputStream fis = new FileInputStream("src/test/resources/config.properties");

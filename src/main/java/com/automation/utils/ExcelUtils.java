@@ -14,14 +14,18 @@ public class ExcelUtils {
 	private static Workbook workbook;
 	private static Sheet sheet;
 
-	public ExcelUtils() {
-		// Private constructor to prevent instantiation
+	private ExcelUtils() {
+		throw new IllegalStateException("Utility class");
 	}
 
 	public static void loadExcel(String filePath, String sheetName) throws IOException {
-		FileInputStream file = new FileInputStream(filePath);
-		workbook = new XSSFWorkbook(file);
-		sheet = workbook.getSheet(sheetName);
+		try (FileInputStream file = new FileInputStream(filePath)) {
+            workbook = new XSSFWorkbook(file);
+            sheet = workbook.getSheet(sheetName);
+        } catch (IOException e) {
+            Log.error("Failed to load Excel file: " + e.getMessage());
+            throw e;
+        }
 	}
 
 	public static String getCellData(int rowNum, int colNum) {
